@@ -1,0 +1,112 @@
+/* .material-icons.alarm {
+  font-size: 96px;
+  color: green;
+} */
+
+:root {
+  --blue: #3d33ce;
+  --light-blue: #e4e2fb;
+  --black: #444;
+  --light-color: #777;
+  --box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
+  --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+  --border: 0.2rem solid var(--blue);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.btn {
+  color: var(--black);
+  border: var(--border);
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--blue);
+}
+
+header {
+  padding: 2rem;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  height: 5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo span {
+  font-size: 2rem;
+  color: var(--blue);
+}
+
+.header .text-logo {
+  color: var(--black);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.header .navbar {
+  margin: 1rem;
+  color: var(--black);
+}
+
+.header .navbar a {
+  margin: 2rem;
+  color: var(--black);
+  transition: all 0.2s ease-out;
+}
+
+.header .navbar a:hover {
+  color: var(--light-color);
+}
+
+.hero {
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.5rem;
+  padding-top: 5rem;
+}
+
+.hero img {
+  width: 50%;
+  height: auto;
+  border-radius: 0.3rem;
+}
+
+.hero div h3 {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.hero div p {
+  display: block;
+  font-size: 0.8rem;
+  padding: 1rem 0rem;
+}
+
+.hero div .btn {
+  align-items: center;
+}
