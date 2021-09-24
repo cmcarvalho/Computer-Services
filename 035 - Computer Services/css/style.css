@@ -11,6 +11,7 @@
   --box-shadow: 0.3rem 0.3rem 0 rgba(22, 160, 133, 0.2);
   --text-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.2);
   --border: 0.2rem solid var(--blue);
+  --border-light: 0.15rem solid var(--blue);
 }
 
 * {
@@ -39,7 +40,7 @@
 }
 
 header {
-  padding: 2rem;
+  padding: 0rem 8rem;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -72,7 +73,7 @@ header {
 }
 
 .header .navbar a {
-  margin: 2rem;
+  margin: 0rem 1rem;
   color: var(--black);
   transition: all 0.2s ease-out;
 }
@@ -82,11 +83,11 @@ header {
 }
 
 .hero {
-  padding: 0.5em;
+  padding: 0rem 8rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 1.5rem;
+  gap: 3rem;
   padding-top: 5rem;
 }
 
@@ -98,15 +99,113 @@ header {
 
 .hero div h3 {
   display: block;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  text-shadow: var(--text-shadow);
 }
 
 .hero div p {
   display: block;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 1rem 0rem;
+  line-height: 1.5rem;
+  color: var(--black);
 }
 
 .hero div .btn {
   align-items: center;
+}
+
+.icons {
+  padding: 5rem 8rem 0rem 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icons .container-1-of-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: var(--border-light);
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.icons .container-1-of-4 .material-icons.desktop_windows {
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+.icons .container-1-of-4 h5 {
+  text-align: center;
+  color: var(--black);
+}
+
+.icons .container-2-of-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: var(--border-light);
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.icons .container-2-of-4 .material-icons.phone_iphone {
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+.icons .container-2-of-4 h5 {
+  text-align: center;
+  color: var(--black);
+}
+
+.icons .container-3-of-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: var(--border-light);
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.icons .container-3-of-4 .material-icons.groups {
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+.icons .container-3-of-4 h5 {
+  text-align: center;
+  color: var(--black);
+}
+
+.icons .container-4-of-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: var(--border-light);
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+.icons .container-4-of-4 .material-icons.laptop {
+  color: var(--blue);
+  font-size: 2rem;
+}
+
+.icons .container-4-of-4 h5 {
+  text-align: center;
+  color: var(--black);
 }
