@@ -40,14 +40,16 @@
 }
 
 header {
-  padding: 0rem 8rem;
-  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
-  width: 100%;
-  height: 5rem;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem 9%;
+  z-index: 1000;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
@@ -73,7 +75,7 @@ header {
 }
 
 .header .navbar a {
-  margin: 0rem 1rem;
+  padding: 2rem;
   color: var(--black);
   transition: all 0.2s ease-out;
 }
@@ -88,13 +90,12 @@ header {
   align-items: center;
   justify-content: space-around;
   gap: 3rem;
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 
 .hero img {
   width: 50%;
   height: auto;
-  border-radius: 0.3rem;
 }
 
 .hero div h3 {
@@ -116,10 +117,14 @@ header {
 }
 
 .icons {
-  padding: 5rem 8rem 0rem 8rem;
-  display: flex;
-  flex-direction: row;
+  padding: 5rem 8rem 5rem 8rem;
+  display: grid;
+  grid-template-columns: [line1] 1fr [line2] 1fr [end];
+  grid-template-rows: [row1] 1fr [row2] 1fr [last-line];
   justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 5rem;
 }
 
 .icons .container-1-of-4 {
@@ -128,15 +133,22 @@ header {
   justify-content: space-evenly;
   align-items: center;
   border: var(--border-light);
-  width: 8rem;
-  height: 8rem;
-  margin-bottom: 2rem;
+  width: 16rem;
+  height: 16rem;
+  margin: auto;
   box-shadow: var(--box-shadow);
 }
 
 .icons .container-1-of-4 .material-icons.desktop_windows {
   color: var(--blue);
+  font-size: 4rem;
+}
+
+.icons .container-1-of-4 h4 {
   font-size: 2rem;
+  text-align: center;
+  color: var(--black);
+  text-shadow: var(--text-shadow);
 }
 
 .icons .container-1-of-4 h5 {
@@ -150,15 +162,21 @@ header {
   justify-content: space-evenly;
   align-items: center;
   border: var(--border-light);
-  width: 8rem;
-  height: 8rem;
-  margin-bottom: 2rem;
+  width: 16rem;
+  height: 16rem;
   box-shadow: var(--box-shadow);
 }
 
 .icons .container-2-of-4 .material-icons.phone_iphone {
   color: var(--blue);
+  font-size: 4rem;
+}
+
+.icons .container-2-of-4 h4 {
   font-size: 2rem;
+  text-align: center;
+  color: var(--black);
+  text-shadow: var(--text-shadow);
 }
 
 .icons .container-2-of-4 h5 {
@@ -172,15 +190,21 @@ header {
   justify-content: space-evenly;
   align-items: center;
   border: var(--border-light);
-  width: 8rem;
-  height: 8rem;
-  margin-bottom: 2rem;
+  width: 16rem;
+  height: 16rem;
   box-shadow: var(--box-shadow);
 }
 
 .icons .container-3-of-4 .material-icons.groups {
   color: var(--blue);
+  font-size: 4rem;
+}
+
+.icons .container-3-of-4 h4 {
   font-size: 2rem;
+  text-align: center;
+  color: var(--black);
+  text-shadow: var(--text-shadow);
 }
 
 .icons .container-3-of-4 h5 {
@@ -194,18 +218,76 @@ header {
   justify-content: space-evenly;
   align-items: center;
   border: var(--border-light);
-  width: 8rem;
-  height: 8rem;
-  margin-bottom: 2rem;
+  width: 16rem;
+  height: 16rem;
   box-shadow: var(--box-shadow);
 }
 
 .icons .container-4-of-4 .material-icons.laptop {
   color: var(--blue);
+  font-size: 4rem;
+}
+
+.icons .container-4-of-4 h4 {
   font-size: 2rem;
+  text-align: center;
+  color: var(--black);
+  text-shadow: var(--text-shadow);
 }
 
 .icons .container-4-of-4 h5 {
   text-align: center;
   color: var(--black);
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 75%;
+  }
+
+  header {
+    padding: 0rem 4rem;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  }
+
+  .hero {
+    padding: 0rem 4rem;
+    padding-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    padding-top: 10rem;
+    flex-direction: column;
+  }
+
+  .icons {
+    padding: 5rem 2rem 5rem 2rem;
+    display: grid;
+    grid-template-columns: [line1] 1fr [line2] 1fr [end];
+    grid-template-rows: [row1] 1fr [row2] 1fr [last-line];
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero img {
+    width: 272px;
+    height: auto;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
